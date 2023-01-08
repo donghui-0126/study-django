@@ -1,0 +1,9 @@
+{% load static %}
+<link rel="stylesheet" href={% static "foods/css/styles_detail.css" %}>
+
+
+<h2>{{menu.name}}</h2>
+<div>{{menu.discription}}</div>
+<p>{{menu.price}} 원</p>
+<img src= {% get_static_prefix %}{{menu.img_path}}/>
+<a herf="/foods/menu/">돌아가기</a>
